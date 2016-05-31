@@ -8,11 +8,8 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
-  <!-- JS -->
-  <script src="node_modules/vue/dist/vue.js"></script>
-  <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
-  <script src="app.js"></script>
   
 <body>
 
@@ -58,7 +55,7 @@
     <div class="col-sm-6">
       <div class="list-group">
 
-        <a href="#" class="list-group-item" v-repeat="event in events">
+        <a href="#" class="list-group-item" v-for="event in events">
           <h4 class="list-group-item-heading">
             <i class="glyphicon glyphicon-bullhorn"></i> 
             {{ event.name }}
@@ -77,6 +74,11 @@
       </div>
     </div>
   </div>
+
+  <!-- JS -->
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+  <script src="app.js"></script>
 
   
 </body>
